@@ -1,0 +1,12 @@
+nome = input('ola, qual o seu nome? ')
+valor = float(input('sr(a) {nome}, qual o valor do imovel que deseja adiquirir ? '.format(nome=nome)))
+renda = float(input('qual a sua renda mensal ? '))
+parc = int(input('em quantas vezes vai parcelar a compra? '))
+prestacao = valor / parc
+minimo = renda * 30 / 100
+print('para pagar uma casa de R${:.2f} em {} meses'.format(valora, parc))
+print('o valor da parcela sera de R${:.2f}'.format(prestacao))
+if prestacao <= minimo:
+    print('emprestimo pode ser concedido!!')
+else:
+    print('emprestimo negado')
